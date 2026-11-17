@@ -1,0 +1,49 @@
+/* Colours from the units policy write-up (main.tex: duneblue #1F3864,
+   dunered #8C1D40, lightpanel #F4F4F4), so the policy site looks different
+   from the orange DUNE project sites. */
+:root {
+  --md-primary-fg-color: #1F3864;
+  --md-primary-fg-color--light: #2E4F86;
+  --md-primary-fg-color--dark: #16294A;
+  --md-accent-fg-color: #8C1D40;
+}
+
+/* Links in body text use the maroon. */
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #8C1D40;
+  --md-accent-fg-color: #8C1D40;
+  --md-accent-fg-color--transparent: rgba(140, 29, 64, 0.08);
+}
+
+/* Navy header bar, as on the write-up's title. */
+.md-header {
+  background-color: #1F3864;
+  color: #fff;
+}
+.md-header .md-header__button,
+.md-header .md-source,
+.md-header .md-header__title { color: #fff; }
+.md-header .md-search__form,
+.md-header .md-search__button { background-color: #fff; color: #1F3864; }
+
+/* Dark mode: keep the navy header, lighten the maroon so links stay readable. */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1F3864;
+  --md-typeset-a-color: #F08FAE;
+  --md-accent-fg-color: #F08FAE;
+  --md-accent-fg-color--transparent: rgba(240, 143, 174, 0.12);
+}
+
+/* Table headers in the light panel colour, as in the write-up. */
+[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
+  background: #F4F4F4;
+  color: #1F3864;
+}
+
+/* Status badges on the policy snapshot. */
+.status { display: inline-block; font-size: .78em; font-weight: 600; padding: .1em .6em; border-radius: 1em; white-space: nowrap; }
+.status.adopted { background: #dcefe2; color: #1e6b3a; }
+.status.ratify  { background: #fde2dc; color: #a3361f; }
+.status.proposed{ background: #fff1d6; color: #8a5300; }
+.status.progress{ background: #eceff3; color: #4a5560; }
+.status.draft   { background: #e6eef8; color: #1f4e79; }

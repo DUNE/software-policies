@@ -1,0 +1,11 @@
+[project]
+name = "dune-software-policies"
+version = "0.1.0"
+description = "DUNE software policies: status, owners and text"
+requires-python = ">=3.10"
+dependencies = [
+    "zensical",
+]
+
+[tool.uv]
+package = false

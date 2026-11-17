@@ -1,0 +1,59 @@
+[project]
+site_name = "DUNE Software Policies"
+site_description = "Every DUNE software policy, its status, its owner and its text"
+site_url = "https://dune.github.io/software-policies/"
+repo_url = "https://github.com/DUNE/software-policies"
+repo_name = "DUNE/software-policies"
+edit_uri = "edit/main/docs/"
+
+nav = [
+  { "Policy snapshot" = "index.md" },
+  { "How a policy changes" = "process.md" },
+  { "Policies" = [
+      { "Units" = "units.md" },
+      { "Dependency change control" = "dependency-change-control.md" },
+      { "Coding conventions" = "coding-conventions.md" },
+      { "Pull requests" = "pull-requests.md" },
+      { "Code ownership" = "code-ownership.md" },
+      { "AI-assisted code" = "ai-usage.md" },
+    ] },
+]
+
+extra_css = ["stylesheets/extra.css"]
+
+[project.theme]
+logo = "images/dune-logo.jpeg"
+favicon = "images/favicon.png"
+features = [
+  "navigation.sections",
+  "navigation.top",
+  "navigation.footer",
+  "search.suggest",
+  "search.highlight",
+  "content.code.copy",
+  "content.action.edit",
+  "toc.follow",
+]
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.markdown_extensions]
+tables = {}
+attr_list = {}
+md_in_html = {}
+admonition = {}
+toc = { permalink = true }
+pymdownx.details = {}
+pymdownx.superfences = {}
+pymdownx.highlight = { anchor_linenums = true }
