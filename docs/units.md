@@ -16,7 +16,7 @@ Applies to DUNE code and configuration written for Phlex. Existing art and LArSo
 | D4 | `hep-config`, built on `hep-units` and `boost-config`, is the supported implementation. |
 | D5 | Code with other units, LArSoft first of all, sits behind a units firewall, crossed only through shared, tested conversion helpers. |
 | D6 | New DUNE data products are converted at the firewall. Wrapped LArSoft products are allowed during the migration; bare LArSoft types are not allowed in new code. |
-| D7 | The three generic packages move from a personal account to a shared organization. DUNE's own units code lives in `dune-core` and `dune-obj`. |
+| D7 | The three generic packages move from a personal account to [NuSoftHEP](https://github.com/NuSoftHEP). DUNE's own units code lives in `dune-core` and `dune-obj`. |
 | D8 | The rules live on this site, with DUNE's other software policies. A deviation is a bug; code review and automated checks look for it. |
 
 ## The two rules
